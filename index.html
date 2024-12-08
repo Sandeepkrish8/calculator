@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>CALCULATOR</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="content">
+			<input type="text" placeholder="0" id="basic-calc">
+			<button onclick="clear()">C1</button>
+			<button onclick="del()">del</button>
+			<button onclick="display('%')">%</button>
+			<button onclick="display('/')">/</button>
+			<button onclick="display('7')">7</button>
+			<button onclick="display('8')">8</button>
+			<button onclick="display('9')">9</button>
+			<button onclick="display('*')">*</button>
+			<button onclick="display('4')">4</button>
+			<button onclick="display('5')">5</button>
+			<button onclick="display('6')">6</button>
+			<button onclick="display('-')">-</button>
+			<button onclick="display('1')">1</button>
+			<button onclick="display('2')">2</button>
+			<button onclick="display('3')">3</button>
+			<button onclick="display('+')">+</button>
+			<button onclick="display('.')">.</button>
+			<button onclick="display('0')">0</button>
+			<button onclick="calculate()" class="equal">=</button>
+		</div>
+	</div>
+
+</body>
+<script>
+	/*let outPutScreen=document.getElementById('basic-calc')
+
+	function display(num){
+		outPutScreen.value += num;
+	}
+
+	function calculate(){
+		try{
+			outPutScreen.value =eval(outPutScreen.value);
+		}
+		catch(error)
+		{
+			alert('invalid')
+		}
+	}*/
+	 let outPutScreen = document.getElementById('basic-calc'); 
+	 function display(num) 
+	 { 
+		outPutScreen.value += num;
+	 } 
+	 function calculate() 
+	 { 
+		try 
+		{ 
+			if (outPutScreen.value === '') 
+			{ 
+				alert('Please enter a value'); 
+			} else 
+			{ 
+				outPutScreen.value = eval(outPutScreen.value); 
+			} 
+		} 
+			catch (error) 
+			
+			{ alert('Invalid input');
+
+			 }
+			 } 
+			 function clearScreen() 
+			 { 
+				outPutScreen.value = '';
+			 } 
+			 function del() 
+			 { 
+				outPutScreen.value = outPutScreen.value.slice(0, -1);
+			 } 
+
+</script>
+</html>

@@ -1,0 +1,58 @@
+
+	body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://plus.unsplash.com/premium_photo-1661663603858-2df08fe3d65d?w=1350&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2FsY3VsYXRvcnxlbnwwfHwwfHx8MA%3D%3D");
+	background-repeat: no-repeat;
+	object-fit: cover;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+input[type="text"] {
+    grid-column: span 4;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
+
+button.equal {
+    background-color: #4caf50;
+    color: white;
+}
+
+button.equal:hover {
+    background-color: #45a049;
+}
+
